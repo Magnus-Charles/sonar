@@ -7,9 +7,9 @@ basic.showIcon(IconNames.Square)
 basic.pause(200)
 basic.forever(function () {
     distance_to_object = sonar.ping(
-    DigitalPin.P0,
-    DigitalPin.P0,
-    PingUnit.MicroSeconds
+    DigitalPin.P1,
+    DigitalPin.P2,
+    PingUnit.Centimeters
     )
     basic.showNumber(distance_to_object)
 })
